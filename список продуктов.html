@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>список продуктов</title>
+    <style>
+        * {box-sizing: border-box;}/* чтобы браузер учитывал рамки (border) и внутренние отступы (padding) в размере ширины (width) элемента. */
+        body {font-family: monospace;/* делаем шрифт моноширинный */
+        background: url(fru/натюр.jpg) no-repeat rgb(114, 114, 113);/* задний фон - картинка без повторения если картинки не бедет то появится серый фон */
+        background-size:cover;             /* РАЗМЕР ЗАДНЕГО ФОНА масштабирует по ширине и высоте */
+        background-attachment: fixed;}        /* фон не прокручивается */
+        figure {padding: 20px;                      /* отступ текста от рамки 3px */
+            border: 3px solid #cecece;            /* рамка толщиной 3 px, одной линией серого цвета */
+            border-radius: 10px;                    /* закругление рамки 10px */
+            background-color:rgb(221, 224, 224); /* цвет фона */
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);/* тень */
+            width: 175px;                            /* ширина */
+            height: 200px;                          /* высота */
+            display: inline-block;                  /*  содержимое блочных элементов начинается с того места, где окончился предыдущий элемент. */
+            vertical-align: top;}                   /* выравнивание фигур по вертикали */                   
+        .block { padding: 8px;}                  /* поля вокруг содержимого элемента */                             
+        figcaption {font-weight:600;        /* жирный стиль */
+            text-align:center;}            /* выравнивание по центру */
+        h1, h2 {text-align:center;        /* выравнивание по центру */
+          font-size: 170%;                 /* размер шрифта */
+        color: rgb(0, 0, 0);}
+                       </style>
+</head>
+
+<body>
+    <article>
+    <h1>What do I have in my fridge</h1>
+    <figure>
+        <img src="fru/Food_C247-128.png" alt="pepper">
+        <figcaption class="block">Pepper</figcaption>
+    </figure>
+    
+    <figure>
+        <img src="fru/Food_C240-128.png" alt="apple">
+        <figcaption class="block">Apple</figcaption>
+    </figure>
+    
+    <figure>
+        <img src="fru/Food_C217-128.png" alt="cheese">
+        <figcaption class="block">Cheese</figcaption>
+    </figure>
+    
+    <figure>
+        <img src="fru/Food_C245-128.png" alt="corn">
+    <figcaption class="block">Corn</figcaption> 
+    </figure>
+
+    <figure>
+        <img src="fru/Food_C239-128.png" alt="mushroom">
+        <figcaption class="block">Mushroom</figcaption>
+    </figure>
+
+    <figure>
+        <img src="fru/Food_C238-128.png" alt="garlic">
+        <figcaption class="block">Garlic</figcaption>
+    </figure>
+    
+    <figure>        
+    <img src="fru/Food_C225-128.png" alt="beef">
+    <figcaption class="block">Beef</figcaption>
+    </figure>
+   
+    <figure>
+        <img src="fru/Food_C205-128.png" alt="fish">
+        <figcaption class="block">Fish</figcaption>
+    </figure>
+
+    <figure>
+        <img src="fru/Food_C203-128.png" alt="eggs">
+        <figcaption class="block">Eggs</figcaption>
+    </figure>
+    
+    <figure>
+        <img src="fru/Food_C235-128.png" alt="coriander">
+        <figcaption class="block">Coriander</figcaption>
+    </figure>
+    <hr>
+    <h2>...that's all...</h2>
+</article>
+
+
+</body>
+</html>

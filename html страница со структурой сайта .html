@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>html страница со структурой сайта</title>
+    <Style>
+        * {box-sizing: border-box;}/* чтобы браузер учитывал рамки (border) и внутренние отступы (padding) в размере ширины (width) элемента. */
+       
+        body {color: cornsilk;
+              font-size:large;      /* размер шрифта */
+              font-family:monospace;/* семейство шрифта */
+              background-color: #cac8c8;}/* цвет фона */
+        article {width: 1300px;/* ширина */
+                margin: 40px auto;/* отступ от края элемента */
+                padding: 20px 20px 20px 20px;/* поля вокруг содержимого элемента */
+                background-color: #f0f0f0;/* цвет фона */
+                box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);}/* тень */
+        .menu {background-color: rgb(118, 11, 218);
+              width: 1260px;/* ширина */
+              margin: 5px 0 0 0; /* отступ от края элемента */ 
+              padding: 10px; /* поля вокруг содержимого элемента */
+              border: 1px solid #cac8c8;/* рамка */
+              text-align: center;} /* выравнивание по центру */
+        header{background-color: rgb(155, 31, 155);
+              width: 1260px;/* ширина */
+              padding: 10px; /* поля вокруг содержимого элемента */
+              border: 1px solid #cac8c8;/* рамка */
+              text-align: center;} /* выравнивание по центру */
+        .aside {width: 310px;/* ширина */
+              height: 150px;   /* высота */
+              margin: 5px 0 0 0; /* отступ от края элемента */ 
+              padding: 20%; /* поля вокруг содержимого элемента */
+              border: 1px solid #cac8c8;/* рамка */
+              text-align: center;} /* выравнивание по центру */
+                      
+        .block::before, .block::after {content: "";    /* вставляем строку пустого  контента */
+                                       display: table;}/* Определяет, что элемент является блочной таблицей подобно использованию тега <table>. */
+        .block::after { clear: both;}/* Отменяет обтекание элемента одновременно с правого и левого края. 
+                                    Это значение рекомендуется устанавливать, когда требуется снять обтекание элемента, но неизвестно точно с какой стороны. */
+        .content{width: 800px;/* ширина */
+              height: 450px;   /* высота */
+              margin: 5px 0 0 315px; /* отступ от края элемента */ 
+              padding: 10px; /* поля вокруг содержимого элемента */
+              border: 1px solid #cac8c8;/* рамка */
+              text-align: center;} /* выравнивание по центру */  
+        .section {background-color: rgb(155, 131, 179);
+              width: 700px;/* ширина */
+              height: 130px;   /* высота */
+              margin: 5px 0 0 0; /* отступ от края элемента */ 
+              padding: 10px; /* поля вокруг содержимого элемента */
+              border: 1px solid #cac8c8;/* рамка */
+              text-align: center;} /* выравнивание по центру */        
+        .alignleft {float: left;/* установить элемент слева */
+                    margin-right: 15px;}/* отступ от края элемента справа */
+        .alignright {float: right;/* установить элемент справа */
+                    margin-left: 15px;}/* отступ от края элемента слева */
+        .aside1  {writing-mode: vertical-rl;/* текст горизонтально */
+              width: 140px;/* ширина */
+              height: 310px;   /* высота */
+              margin: 5px 0 0 0; /* отступ от края элемента */ 
+              padding: 4%; /* поля вокруг содержимого элемента */
+              border: 1px solid #cac8c8;/* рамка */
+              text-align: center;} /* выравнивание по центру */
+        .vnutri {margin:  60px 20px 20px 40px;}           
+        .color {background-color: rgb(112, 74, 104);} 
+       
+  }         
+</Style>
+</head>
+
+
+<body>
+ <article>
+    <header>Header</header> 
+    <div class="menu block">Menu</div>
+    <div class="alignleft block " >
+        <div class="aside color">Aside1</div>
+        <div class="aside color">Aside2</div>
+    </div>
+    <div class="aside1 block alignright color" >Aside3</div>
+    <div class="content block color">Main content
+        <div class="vnutri">
+            <div class="section"> Section1</div>
+            <div class="section">Section2</div>
+        </div>
+    </div>
+    
+    <footer class="menu block" >footer</footer>
+</article>
+</body>
+
+
+</html>

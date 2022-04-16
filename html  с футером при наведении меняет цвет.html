@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>страница с наведением</title>
+<style>
+    article {width: 1000px;}/* ширина */
+    body {background-color: rgb(189, 189, 190); /* задний фон */       
+    color: cornsilk;}                           /* цвет текста */
+    .zaglavn {text-transform: capitalize;}        /* слова с заглавной буквы */
+    .block { margin: 1% 8% 2% 8%;/* отступ от края элемента */
+            display: inline-block;/*  содержимое блочных элементов начинается с того места, где окончился предыдущий элемент. */
+            padding: 5%; }/* поля вокруг содержимого элемента */
+            
+    .alignleft {margin-right: 15px;}/* отступ от края элемента справа */
+    .alignright {margin-top: 5%;}/* отступ сверху */
+                        
+    .footer {text-align: center;/* выравнивание текста по середине */
+            font-size:xx-small;}/* маленький шрифт */
+
+    article {margin: 1%;/* отступ от края элемента */
+            background-color: cornflowerblue;}/* задний фон */
+    
+    .p {padding: 1% 1% 2%;}/* отступ от контента */
+   
+    img {margin-left: 1%;/* отступ от края элемента слева */
+        margin-right: 1%;}/* отступ от края элемента справа */
+    
+    .block1 {margin-left: 2%;/* отступ от края элемента слева */
+            margin-right: 2%;/* отступ от края элемента справа */
+            display: inline-block;}/*  содержимое блочных элементов начинается с того места, где окончился предыдущий элемент. */
+    
+    a.fb {background: url(fru/fb_gray.png); /* Путь к файлу с исходным рисунком  */
+        display: block; /*  Рисунок как блочный элемент */
+        width: 63px; /* Ширина рисунка */
+        height: 63px;} /*  Высота рисунка */
+   a.fb:hover {background: url(fru/fb.png);} /* Путь к файлу с заменяемым рисунком  */
+  
+   
+   a.in {background: url(fru/insta_gray.png); /* Путь к файлу с исходным рисунком  */
+        display: block; /*  Рисунок как блочный элемент */
+        width: 63px; /* Ширина рисунка */
+        height: 63px; /*  Высота рисунка */
+   }
+   a.in:hover {background: url(fru/insta.png);} /* Путь к файлу с заменяемым рисунком  */
+
+   a.you {background: url(fru/youtube_gray.png); /* Путь к файлу с исходным рисунком  */
+        display: block; /*  Рисунок как блочный элемент */
+        width: 63px; /* Ширина рисунка */
+        height: 63px;} /*  Высота рисунка */
+  
+    a.you:hover {background: url(fru/youtube.png);} /* Путь к файлу с заменяемым рисунком  */
+  
+   </style>
+</head>
+
+
+<body>
+    <article>
+    <div class="block alignleft">
+        <p class="zaglavn">home</p>
+        <p class="zaglavn">about</p>
+        <p class="zaglavn">gallery</p>
+        <p class="zaglavn">news</p>
+    </div>
+
+    <div class="block">
+        <p class="zaglavn">blog</p>
+        <p>FAQ</p>
+        <p class="zaglavn">contact</p>
+        <p>Privacy & cookies</p>
+    </div>
+
+    
+        <div class="block1"> <p><a href="#" class="fb"> </a></p></div>
+        <div class="block1"> <p><a href="#" class="in"> </a></p></div>
+        <div class="block1"> <p><a href="#" class="you"> </a></p></div>
+    
+    
+    <div class="footer p">
+        <hr>
+        <p>Coopyright &copy; Company 2018-2019</p>
+    </div>
+</article>
+</body>
